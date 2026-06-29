@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이지연 | 웹 명함 & 이력서</title>
+    <meta name="description" content="AI 업무 자동화 & 웹 접근성 개발자 이지연의 디지털 명함과 이력서입니다.">
+    
+    <!-- Open Graph (카카오톡, 페이스북 등 SNS 공유 미리보기) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="이지연 | AI 업무 자동화 & 웹 접근성 개발자">
+    <meta property="og:description" content="한계를 극복하는 끈기로 모두를 위한 기술을 만드는 개발자 이지연의 디지털 명함입니다.">
+    <meta property="og:image" content="og-image.png">
+    <meta property="og:url" content="https://your-site.netlify.app">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="이지연 웹 명함">
+
+    <!-- Twitter Card (트위터/X 공유 미리보기) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="이지연 | AI 업무 자동화 & 웹 접근성 개발자">
+    <meta name="twitter:description" content="한계를 극복하는 끈기로 모두를 위한 기술을 만드는 개발자 이지연의 디지털 명함입니다.">
+    <meta name="twitter:image" content="og-image.png">
+
+    <!-- 네이버 검색 최적화 -->
+    <meta name="author" content="이지연">
+    <meta name="keywords" content="이지연, 웹 개발자, AI 자동화, 웹 접근성, 이력서, 명함, 포트폴리오">
+
+    <!-- Google Fonts: Inter (영어) & Noto Sans KR (한국어) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 오로라 메쉬 그라데이션 배경 -->
+    <div class="aurora">
+        <div class="aurora-blob aurora-1"></div>
+        <div class="aurora-blob aurora-2"></div>
+        <div class="aurora-blob aurora-3"></div>
+        <div class="aurora-blob aurora-4"></div>
+    </div>
+    <!-- 미세 노이즈 텍스처 오버레이 -->
+    <div class="noise-overlay"></div>
+
+    <div class="wrapper">
+        <main class="card" id="cardContainer">
+            
+            <!-- 화면 전환 토글 버튼 -->
+            <button class="toggle-btn" id="toggleBtn" aria-label="화면 전환">
+                <span class="icon-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2" ry="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                </span>
+                <span class="icon-resume">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                </span>
+                <span class="btn-text">이력서 보기</span>
+                <span class="btn-arrow">→</span>
+            </button>
+
+            <!-- ===== 1. 명함 화면 ===== -->
+            <div class="card-section card-front">
+                <div class="card-front-content">
+                    <!-- 상단 장식 바 -->
+                    <div class="card-accent-bar"></div>
+                    
+                    <div class="profile-area">
+                        <div class="profile-img-wrapper" data-animate>
+                            <img src="avatar.png" alt="이지연 프로필 이미지" class="profile-img">
+                            <div class="status-dot"></div>
+                        </div>
+                        <div class="profile-info" data-animate>
+                            <p class="greeting">안녕하세요, 저는</p>
+                            <h1 class="name">이지연</h1>
+                            <p class="en-name">Jiyeon Lee</p>
+                            <div class="job-badge">
+                                <span class="badge-dot"></span>
+                                AI 업무 자동화 & 웹 접근성 개발자
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="tagline" data-animate>"한계를 극복하는 끈기로 모두를 위한 기술을 만듭니다."</p>
+                    
+                    <div class="contact-area" data-animate>
+                        <a href="mailto:ji3087@naver.com" class="contact-chip">
+                            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <span>ji3087@naver.com</span>
+                        </a>
+                        <a href="tel:010-6346-1931" class="contact-chip">
+                            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <span>010-6346-1931</span>
+                        </a>
+                        <a href="https://github.com/ji3087" target="_blank" class="contact-chip">
+                            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== 2. 이력서 화면 ===== -->
+            <div class="card-section card-back">
+                <div class="card-back-content">
+                    
+                    <header class="resume-header" data-animate>
+                        <div class="resume-header-top">
+                            <div>
+                                <h2 class="resume-title">RESUME</h2>
+                                <p class="resume-subtitle">끈기 있게 한계를 극복하고, 기술을 통해 삶을 개선하는 개발자 이지연입니다.</p>
+                            </div>
+                        </div>
+                    </header>
+
+                    <!-- 자기소개 -->
+                    <section class="resume-section" data-animate>
+                        <div class="section-header">
+                            <span class="section-icon">👋</span>
+                            <h3 class="section-title">자기 소개</h3>
+                        </div>
+                        <p class="section-text">
+                            갑작스러운 건강상의 난관 앞에서도 매일 조금씩 한계를 극복하는 재활 훈련을 멈추지 않았습니다. 
+                            이 극복 과정은 저에게 <strong>'매일 1%씩 정직하게 나아가는 끈기'</strong>와 단단한 <strong>'회복탄력성'</strong>을 선물해 주었습니다. 
+                            제 삶을 스스로 일으켜 세운 것처럼, 이제는 AI 자동화 기술과 세심한 웹 개발 능력을 바탕으로 모두가 편리하게 사용할 수 있는 서비스를 만드는 데 기여하고 싶습니다.
+                        </p>
+                    </section>
+
+                    <!-- 벤토 그리드 기술 스택 -->
+                    <section class="resume-section" data-animate>
+                        <div class="section-header">
+                            <span class="section-icon">⚡</span>
+                            <h3 class="section-title">핵심 역량 & 스택</h3>
+                        </div>
+                        <div class="bento-grid">
+                            <div class="bento-card bento-accent">
+                                <span class="bento-emoji">🔥</span>
+                                <h4>Core Attitude</h4>
+                                <div class="skill-tags">
+                                    <span class="tag">끈기와 그릿(Grit)</span>
+                                    <span class="tag">회복탄력성</span>
+                                    <span class="tag">자기주도 문제해결</span>
+                                </div>
+                            </div>
+                            <div class="bento-card">
+                                <span class="bento-emoji">♿</span>
+                                <h4>Web Accessibility</h4>
+                                <div class="skill-tags">
+                                    <span class="tag">웹 접근성(WA)</span>
+                                    <span class="tag">HTML5 & CSS3</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="bento-card">
+                                <span class="bento-emoji">🤖</span>
+                                <h4>AI & Automation</h4>
+                                <div class="skill-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Prompt Eng.</span>
+                                    <span class="tag">Make & API</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 프로젝트 -->
+                    <section class="resume-section" data-animate>
+                        <div class="section-header">
+                            <span class="section-icon">🚀</span>
+                            <h3 class="section-title">주요 프로젝트</h3>
+                        </div>
+                        <div class="project-cards">
+                            <div class="project-card">
+                                <div class="project-period">2026.02 — 03</div>
+                                <h4 class="project-name">웹 접근성 준수 명함/이력서</h4>
+                                <p class="project-desc">
+                                    키보드(Tab 키) 조작만으로 모든 동작을 수행할 수 있도록 포커스 스타일과 Semantic HTML을 정밀 적용하고, 스크린 리더용 텍스트를 제공하여 정보 접근 장벽을 최소화한 프로젝트입니다.
+                                </p>
+                                <div class="project-tags">
+                                    <span>HTML</span><span>CSS</span><span>JS</span><span>A11y</span>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="project-period">2026.04 — 05</div>
+                                <h4 class="project-name">AI 기반 메일 답변 자동화</h4>
+                                <p class="project-desc">
+                                    수신 메일의 성격을 AI가 자동 분류하고 맞춤형 답변 초안을 작성하는 시스템을 Python과 Gmail API로 개발하여, 메일 처리 시간을 <strong>70% 이상 단축</strong>했습니다.
+                                </p>
+                                <div class="project-tags">
+                                    <span>Python</span><span>Gmail API</span><span>AI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 학력 -->
+                    <section class="resume-section" data-animate>
+                        <div class="section-header">
+                            <span class="section-icon">🎓</span>
+                            <h3 class="section-title">학력 및 교육</h3>
+                        </div>
+                        <div class="edu-cards">
+                            <div class="edu-card">
+                                <span class="edu-date">2026.01 — 현재</span>
+                                <span class="edu-detail">AI 사무 자동화 및 프론트엔드 개발자 양성 과정</span>
+                            </div>
+                            <div class="edu-card">
+                                <span class="edu-date">2019.03 — 2024.02</span>
+                                <span class="edu-detail">한국대학교 경영학과 학사 졸업</span>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
