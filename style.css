@@ -651,7 +651,7 @@ body {
 @media (max-width: 768px) {
     :root {
         --card-w-front: 92vw;
-        --card-h-front: auto;
+        --card-h-front: 360px;
         --card-w-back: 92vw;
         --card-h-back: 85vh;
     }
@@ -677,6 +677,10 @@ body {
 }
 
 @media (max-width: 480px) {
+    :root {
+        --card-h-front: 460px;
+    }
+
     .profile-area { flex-direction: column; align-items: flex-start; gap: 12px; }
     
     .toggle-btn .btn-text { display: none; }
