@@ -659,23 +659,23 @@ body {
 
     body {
         overflow: auto;
-        align-items: flex-start;
-        padding-top: 20px;
+        align-items: center;
+        padding-top: 0;
     }
 
     .wrapper {
-        height: auto;
+        height: 100vh;
         min-height: 100vh;
-        padding: 0 12px 24px;
-        align-items: flex-start;
+        padding: 12px;
+        align-items: center;
+        justify-content: center;
     }
 
-    /* 명함 카드: absolute → relative로 전환하여 콘텐츠에 맞게 자동 높이 */
+    /* 명함 카드: 이력서와 동일한 높이로 통일 */
     .card {
         width: var(--card-w-front);
-        height: auto;
-        min-height: 0;
-        overflow: visible;
+        height: var(--card-h-back);
+        overflow: hidden;
     }
 
     .card.active-resume {
@@ -684,12 +684,17 @@ body {
         overflow: hidden;
     }
 
+    /* 명함 화면: 카드 전체를 채우고 콘텐츠를 세로 가운데 정렬 */
     .card-section.card-front {
-        position: relative;
-        padding: 24px;
+        position: absolute;
+        inset: 0;
+        padding: 32px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .card-front-content { gap: 16px; }
+    .card-front-content { gap: 20px; }
 
     /* 이력서 화면은 카드 위에 오버레이 */
     .card-section.card-back {
